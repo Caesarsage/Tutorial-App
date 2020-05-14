@@ -42,7 +42,7 @@ mongoose.connect('mongodb://caesar:mighty@cluster0-shard-00-00-r7d4u.mongodb.net
 useUnifiedTopology:true}
 )
 .then(result => {
-    console.log('database connected')
+    console.log(`database connected ${result}`)
     console.log(`Running on port ${port}`);
 app.listen(port)
 });
