@@ -28,9 +28,7 @@ app.use('/v1', loginRoute);
 app.use('/v1', index);
 app.use('/v1', signupRoute);
 app.use('/v1', tutorRoute);
-app.use('/v1', User, (req,res)=> {
-    res.send ("<h1>Welcome to my app</h1>")
-});
+
 
 
 //create a port
