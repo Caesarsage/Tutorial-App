@@ -4,7 +4,7 @@ const router = require('express').Router(),
       { auth } = require('../authentification/authorize');
 
 
-router.post('/admin', [ token, auth("Tutor") ], makeTutor, (req, res)=>{
+router.post('/admin', [ token, auth("Admin") ], makeTutor, (req, res)=>{
     res.send('Welcome to the Admin Portal!!!')
 });
 
