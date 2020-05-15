@@ -1,8 +1,7 @@
 const express = require('express'),
     mongoose = require('mongoose'),
     bodyparser = require('body-parser'),
-    debug = require('debug'),
-    //ROUTES
+        //ROUTES
     adminRoute = require('./route/adminRoute'),
     categoryRoute = require('./route/categoryRoute'),
     lessonRoute = require('./route/lessonRoute'),
@@ -25,12 +24,9 @@ app.use('/v1', lessonRoute);
 app.use('/v1', loginRoute);
 app.use('/v1', subjectRoute);
 app.use('/v1', loginRoute);
-app.use('/v1', index);
 app.use('/v1', signupRoute);
 app.use('/v1', tutorRoute);
-app.use('/v1', User, (req,res)=> {
-    res.send ("<h1>Welcome to my app</h1>")
-});
+app.use('/v1', index);
 
 
 //create a port
