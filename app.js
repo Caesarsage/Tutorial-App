@@ -16,8 +16,8 @@ const express = require('express'),
 
 
 const app = express();
-app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({extended: true}));
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 app.use('/v1', adminRoute);
 app.use('/v1', categoryRoute);
