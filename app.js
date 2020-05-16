@@ -25,10 +25,9 @@ app.use('/v1', lessonRoute);
 app.use('/v1', loginRoute);
 app.use('/v1', subjectRoute);
 app.use('/v1', loginRoute);
-app.use('/v1', index);
 app.use('/v1', signupRoute);
 app.use('/v1', tutorRoute);
-
+app.use('/v1', index);
 
 
 //create a port
