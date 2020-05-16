@@ -34,7 +34,6 @@ app.use('/v1', index);
 const port = process.env.PORT || 3000;
 //connect to a database
 //mongoose.connect('mongodb://localhost/')
-process.env.databaseURL
 mongoose.connect('mongodb://caesar:mighty@cluster0-shard-00-00-r7d4u.mongodb.net:27017,cluster0-shard-00-01-r7d4u.mongodb.net:27017,cluster0-shard-00-02-r7d4u.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', {useNewUrlParser: true,
 useUnifiedTopology:true}
 )
